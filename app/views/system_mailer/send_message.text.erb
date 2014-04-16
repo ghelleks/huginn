@@ -1,0 +1,7 @@
+<% if @headline %><%= @headline %>
+
+<% end %><% @groups.each do |group| %><%= group[:title] %>
+<% group[:entries].each do |entry| %>  <%= entry %>
+<% end %>
+
+<% end %>
