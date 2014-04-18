@@ -13,4 +13,11 @@
 # Application start and stop is subject to different timeouts
 # throughout the system.
 
-source ${OPENSHIFT_REPO_DIR}/.env.openshift
+while read -r line; do
+    if [[ $str =~ ^\s*(#|$) ]]
+    then 
+      continue
+    else
+      export "$line"
+    fi
+done < ${OPENSHIFT_REPO_DIR}/.env.openshift
