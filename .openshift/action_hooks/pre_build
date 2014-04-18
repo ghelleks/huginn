@@ -22,4 +22,4 @@ else
 fi
 
 # now slurp in the variables the asset precompile is looking for
-source ${OPENSHIFT_REPO_DIR}/.env.openshift
+source ${OPENSHIFT_REPO_DIR}/.env
