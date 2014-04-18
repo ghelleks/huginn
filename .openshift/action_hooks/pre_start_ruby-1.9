@@ -14,7 +14,10 @@
 # throughout the system.
 
 while read -r line; do
-    if [[ $str =~ ^# ]]
-    then export "$line"
+    if [[ $str =~ ^\s*(#|$) ]]
+    then 
+      continue
+    else
+      export "$line"
     fi
 done < ${OPENSHIFT_REPO_DIR}/.env.openshift
