@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://mirror.ops.rhcloud.com/mirror/ruby/'
 
 # Bundler <1.5 does not recognize :x64_mingw as a valid platform name.
 # Unfortunately, it can't self-update because it errors when encountering :x64_mingw.

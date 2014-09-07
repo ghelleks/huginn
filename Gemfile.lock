@@ -9,7 +9,7 @@ GIT
       simple_oauth (~> 0.2.0)
 
 GEM
-  remote: https://rubygems.org/
+  remote: http://mirror.ops.rhcloud.com/mirror/ruby/
   specs:
     ace-rails-ap (2.0.1)
     actionmailer (4.1.5)
